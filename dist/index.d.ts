@@ -1,5 +1,5 @@
 /// <reference types="googlemaps" />
-import { PointData, MapOptions, Map } from 'zw-maps';
+import { PointData, MapOptions, Map } from '@zcomp/maps';
 export interface GoogleMapPointData extends PointData {
     marker: google.maps.Marker | null;
     infoWindow: google.maps.InfoWindow | null;

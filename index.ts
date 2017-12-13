@@ -1,4 +1,4 @@
-import { PointData, MapOptions, Map, Coords } from 'zw-maps';
+import { PointData, MapOptions, Map, Coords } from '@zcomp/maps';
 
 export interface GoogleMapPointData extends PointData {
   marker: google.maps.Marker|null;
