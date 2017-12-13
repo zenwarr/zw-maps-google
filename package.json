@@ -1,5 +1,5 @@
 {
-  "name": "zw-maps-google",
+  "name": "@zcomp/maps-google",
   "version": "0.0.3",
   "description": "",
   "main": "dist/index.js",

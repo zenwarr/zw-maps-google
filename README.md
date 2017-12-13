@@ -1,7 +1,7 @@
 # Usage
 
 ```
-npm i --save zw-maps-google
+npm i --save @zcomp/maps-google
 ```
 
 ```html
