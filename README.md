@@ -11,8 +11,7 @@ npm i --save @zcomp/maps-google
 Note that `async` and `defer` attributes on `script` tag for Google Maps API library are not supported yet.
 
 ```js
-const MapFactory = require('@zcomp/maps').MapFactory;
-const GoogleMap = require('@zcomp/maps-google').GoogleMap;
+const GoogleMapFactory = require('@zcomp/maps-google').GoogleMapFactory;
 
-MapFactory.init(GoogleMap);
+GoogleMapFactory.init();
 ```

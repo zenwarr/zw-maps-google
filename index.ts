@@ -1,4 +1,9 @@
 import { PointData, MapOptions, Map, Coords } from '@zcomp/maps';
+import * as maps from '@zcomp/maps';
+import {ComponentFactory} from '@zcomp/base';
+import * as base from '@zcomp/base';
+
+export const DefaultOptions: MapOptions = base.assign({ }, maps.DefaultOptions);
 
 export interface GoogleMapPointData extends PointData {
   marker: google.maps.Marker|null;
@@ -6,7 +11,7 @@ export interface GoogleMapPointData extends PointData {
 }
 
 export class GoogleMap extends Map {
-  constructor(root: Element, options?: MapOptions) {
+  constructor(root: Element, options: MapOptions) {
     super(root, options);
 
     if (!(window as any).google || !google.maps) {
@@ -81,3 +86,5 @@ export class GoogleMap extends Map {
 
   protected _gmap: google.maps.Map;
 }
+
+export const GoogleMapFactory = new ComponentFactory<GoogleMap, MapOptions>('map', DefaultOptions, GoogleMap);
