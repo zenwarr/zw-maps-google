@@ -1,13 +1,13 @@
 {
   "name": "@zcomp/maps-google",
-  "version": "0.0.9",
+  "version": "0.0.10",
   "description": "",
   "main": "dist/index.js",
   "types": "dist/index.d.ts",
   "dependencies": {
     "@types/google-maps": "^3.2.0",
-    "@zcomp/base": "0.0.8",
-    "@zcomp/maps": "0.0.12"
+    "@zcomp/base": "0.0.9",
+    "@zcomp/maps": "0.0.13"
   },
   "devDependencies": {
     "ts-loader": "^3.1.1",
